@@ -49,6 +49,7 @@ const  PatientForm = () => {
     } catch (error) {
         console.log(error);
     }
+    setisLoading(false);
   }
   return (
     <Form {...form}>
@@ -89,6 +90,7 @@ const  PatientForm = () => {
       </form>
     </Form>
   )
+  setisLoading(false);
 }
 
 export default PatientForm
